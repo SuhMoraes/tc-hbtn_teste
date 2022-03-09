@@ -16,20 +16,17 @@ public class OperacaoBasica {
         return a / b;
     }
 
-    public static double sqrt (double valor) {
-        return Math.sqrt(valor);
+    public static double sqrt (double a) {
+        return Math.sqrt(a);
     }
 
-    public static String numero_primo(double valor) {
-        if (valor <= 1) {
+    public static String numero_primo(double a) {
+        if(a <= 1) {
             return "Número invalido. Numero menor ou igual a 1 não é primo";
-        }
-
-        if (valor % 2 == 0) {
+        }else  if (a % 2 == 0) {
             return "Número válido, mas o numero não é primo";
-        }else {
+        } else {
             return "Numero válido, o numero é primo";
         }
     }
-
 }
